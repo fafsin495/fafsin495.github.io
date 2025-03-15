@@ -1,455 +1,300 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PortFolio</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
 
-<html>
-	<head>
-		<title>Dimension by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						
-						<div class="content">
-							<div class="inner">
-								<h1>Fatih Afşin</h1>
-								<p>Merhabalar ben Fatih Afşin. Hali hazırda Netas bünyesinde çalışmakta olan genç bir bireyim.<br>  
-									Bu portfolyo veri bilimi alanında yaptığım 
-									bazı çalışmaları  sizlere sunmak için hazırlanmıştır.<br> Keyifle ve öğrenme arzusuyla incelemenizi temenni ederim.
-									İyi keyifler... 
-									
-									</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Hakkımda</a></li>
-								<li><a href="#work">Çalışmalar</a></li> 
-								<li><a href="#sertifika">sertifika</a></li>
-								
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-					
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Hakkımda</h2>
-								<span class="image main"><img src="images/afsin.jpeg" alt="" /></span>
-								<p align="justify"> Benim adım Fatih Afşin , 24 Eylül 1998 Adıyaman doğumlu genç bir mühendis adayıyım.
-									Altı kişilik ailenin en büyük çocuğuyum.
-									Fatih nasıl biridir diye soracak olursanız eğer , kendimi eğlenerek çalışmayı seven , titiz,
-									 disiplinli ,araştrma kültürüne sahip bir birey olarak tanımlayabilirim. Kitaplarla aram iyidir fakat 
-									 alışıla gelmiş kişisel gelişim , polisiye kitaplarından ziyade araştırma ve inceleme kitaplarını tercih ederim
-									 bknz : <a href="https://www.dr.com.tr/Kitap/Hazardan-Karadenize-Stratejik-Bakis/Okan-Yesilot/Arastirma-Tarih/Politika-Arastirma/Dunya-Politika-/urunno=0000000623957">Hazardan Karadenize Stratejik Bakış</a> ,
-									 <a href="https://www.siyahgribeyaz.com/search/label/D%C3%B6rt%20Deniz%20B%C3%BClteni">Siyah Gri Beyaz</a> . 
-									 Bu sebeple çeşitli konularda makale okumayı kitap okumaya tercih ederim. Hobilerime gelecek olursak eğer 
-									 kampçılık, doğa yürüyüşü , askeri havacılık ve sıkı bir maketçiyimdir.   
-									 </p>
-								<p align="justify">Kişisel bilgilerimden eğitim bilgilerime geçecek olur isek ;
-									Fırat Üniversitesi yazılım mühendisliğinden 3.09 ortalama ile mezun olan genç bir arkadaşınızım.
-									Kariyerimi <b>Veri Bilimi ,Yapay Zeka</b> alanında geliştirmek ve bu hedefime yönelik
-									olarak çeşitli kurs ve sertifika programlarına katılıp öğrendiklerimi pratik üzerinde gerçekleştirmeye 
-									gayret etmekteyim.  <a href="#work">Çalışmalarım</a>  sekmesinden görebilirsiniz.
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">PortFolio</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-									
-									
-								</p>
-								<p><b>Sabırla okuduğunuz için Teşekkürler <br>İyi Günler Dilerim</b></p>
-							</article>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Anasayfa</a>
+                        <a href="#about" class="nav-item nav-link">Hakkımda</a>
+                        <a href="#experience" class="nav-item nav-link">Deneyim</a>
+                        <a href="#blog" class="nav-item nav-link">Projeler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major"><b>Çalışmalarım</b></h2>
-								<span class="image main"><img src="images/as.png" alt="" /></span>
-								<p align="justify">Hedeflemiş olduğum kariyer için çeşitli kurs ve eğitimlere katılım sağlayıp bunları uygulamalı olarak gerçekleştirmeyi amaç edinen bir bireyim. Bu sayfada yapmış olduğum bazı çalışmaları gözlemleyeceksiniz.
-									Almış olduğum sertifika ve eğitimleri gözlemleyebilmek için <b><a href="#sertifika">Sertifika</a> </b>  sekmesini tıklayabilirsiniz. </p>
 
-								<p align="justify"><b>Fake News Detection Challange KDD 2020 </b><br>
-										Kaggle platformu üzerinde, yarınlarımız için güvenli internet sloganıyla düzenlenen sahte haber tespiti yarışması kapsamında gerçekleştirmiş olduğum çalışmam.
-										Bu çalışmamda Multinomial Naive-Bayes, Passive Aggressive Classifier ve Logistic Regression algoritmaları kullandım. Bu algoritmalar arasında en yüksek F-1 Skora sahip olan
-										Logistic Regression algoritması ile submission'umu tamamladım.
-										<br>Proje Url'si = <b> <a href="https://www.kaggle.com/moneyshot495/fnd-ml">Sahte Haber Tespiti</a></b>
-								</p>
-								<p align="justify"><b>Duygu Analizi</b><br>
-										E-Ticaret sitesinde alınan ürünlere yapılmış olan kullanıcı yorumları üzerinden Multinoimal Naive Bayes algoritması ile modelimi gerçekleştirdiğim çalışmam.
-										<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/Sentiment-_Analysis">Duygu Analizi</a></b>
-								</p>
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>Merhaba !</p>
+                                <h1>Ben Fatih Afşin</h1>
+                                <h2></h2>
+                                <div class="typed-text">Backend Developer, Full Stack Developer, Data Science</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="img/developer.png" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
 
-								<p align="justify"><b>Sahte Haber Tespiti  </b><br>
-									Kaggle ortamında sunulmuş olan Fake News veri seti üzerinde sahte haber teşhisine yönelik gerçekleştimiş olduğum çalışma.Çalışmamı gerçekleştiriken iki farklı yol izledim, 
-									bunlardan ilki Lstm sinir ağı kullanarak gerçekleştirdiğim çalışma idi, burada doğal dil işleme yöntemleri ile gerçekleştirmiş olduğum veri ön işleme safhasından sonra 
-									OneHot Encoding işlemi ile metin verilerini sayısal ifadelere çevirme işlemi gerçekleştirip sinir ağı modelim ile eğitimini gerçekleştirdim. Diğer çalışmamda ise metin verilerini
-									Tfidf Vectorizer yöntemi ile sayısallaştırma işlemi gerçekleştirdim ve makine öğrenmesi algoritmalarından Logistic Regression ve Multinoimal Naive-Bayes algoritmaları ile modelimin eğitimini gerçekleştirdim.
 
-									<br>Lstm Yöntemi ile Gerçekleştirdiğim Proje Url'si = <b> <a href="https://www.kaggle.com/moneyshot495/lstm-fake-news-detected">LSTM </a></b>
-									<br>ML Algoritmaları ile Gerçekleştirdiğim Proje Url'si = <b> <a href="https://www.kaggle.com/moneyshot495/fake-news-detected-tfidfvectorizer-nb-lr">ML </a></b>
-								</p>
-								
-								<p align="justify"><b>Siber Zorbalık Tespiti</b><br>
-									Twitter adlı sosyal medya uygulamasından elde edilen veriler ile oluşturulmuş veri setinde doğal dil işleme yöntemleri kullanılarak siber zorbalık tespitinin yapılması hedeflenmiştir. Porje bir sınıflandırma problemi olduğu için çeşitli sınıflandırma algoritmaları kullanılarak başarım oranları ölçülmüştür.
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/Twitter_SiberZorbalikTespiti_NLP_Python">Siber Zorbalık Tespiti</a></b>
-								</p>
-								<p align="justify"><b>E-Ticaret Değerlerinin Görselleştirilmesi</b><br>
-									E-Ticaret ile alakalı oluşturduğum klasör'deki veri setini , Merkez Bankasının Apisine bağlanarak elde ettiğim Türkiyenin Son 5 yılda haftalara göre verilerinin görselleştirilmesini ve dolar kuruna göre yapılan harcamaların Simple Linear Regressyion algoritması yöntemi ile  gerçekleştirdiğim çalışmam  .
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/E_Ticaret_Gorsellestirme">E-Ticaret Değerlerinin Görselleştirilmesi</a></b>
-								</p>
-								<p align="justify"><b>Mnist Veri Seti İle Yapay Sinir Ağı Çalışması </b><br>
-									Yapay sinir ağı için google colab'da oluşturduğum notebook'da keras kütüphanesi kullanarak temel olarak yapay sinir ağı oluşturma işlemini gerçekleştirdiğim çalışmam.
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/MINST_Basit_Yapay_Sinir_Agi-_Olusturma">Mnist Veri Seti İle Yapay Sinir Ağı Çalışması</a></b>
-								</p>
-								<p align="justify"><b>Titanik Veri Seti ile Veri Bilimi Çalışması  </b><br>
-									Kaggle platformunda bulunan titanik veri seti yarışması için yapmış olduğum veri bilimi çalışması.
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/MINST_Basit_Yapay_Sinir_Agi-_Olusturma">Titanik Veri Seti ile Veri Bilimi Çalışması </a></b>
-								</p>
-								
-								<p align="justify"><b>ML Algoritmaları Kullanılarak Sahte Haber Tespiti  </b><br>
-									Kaggle platformunda verilen Fake News veri seti üzerinde ML algoritmalarndan LR ve Multinomal Naive Bayes algoritmalarını uygulayarak gerçekleştirmiş olduğum proje.
-									Doğal dil işleme yöntemleri ile veri ön işleme safhasını gerçekleştirdiğim projede. 
-									Metin verilerini Tfidf Vectorizer yöntemli ile sayısallaştırdıktan sonra Makine öğrenmesi algoritmaları ile modelimi oluşturdum.
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/developper.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Hakkımda</p>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Yazılım mühendisliği alanındaki akademik geçmişim ve sektördeki deneyimlerimle, ödeme sistemleri, bankacılık ve kurumsal yönetim gibi farklı alanlarda çalışmalar yürüttüm. BKM ve TCMB gibi önemli entegrasyon projelerinde aktif rol alarak, mikroservis mimarisi ile güncel teknolojileri projelere entegre ettim. Bu sayede hem teknik becerilerimi hem de sektör bilgimi sürekli olarak geliştirme fırsatı buldum.
+                                <p>
+                                    Üniversite yıllarımdan itibaren veri bilimi ve yapay zeka konularına büyük ilgi duydum. LLM ve yapay zeka ajanları alanındaki gelişmeleri yakından takip eden, rekabetçi ve sürekli öğrenmeyi hedefleyen biriyim. Teknolojiye duyduğum tutku, sadece işimi daha iyi yapmamı değil, aynı zamanda sektöre değer katan projelerde yer almamı da sağlıyor.
+                                </p>
+                                <p>
+                                    Kişisel olarak kendimden bahsedecek olursak ; Sosyo-politik, askeri teknoloji ve jeopolitik konulara yoğun ilgi duyan biriyim. Kitap seçimlerimde genellikle araştırma ve inceleme odaklı eserlere yönelir, “Hazardan Karadeniz’e Stratejik Bakış” ve <a href="https://www.siyahgribeyaz.com/">“Siyah Gri Beyaz”</a> gibi kaynakları tercih ederim. Bu nedenle çoğu zaman makale okumayı kitap okumaya yeğlerim. Kampçılık, doğa yürüyüşü, askeri havacılık ve maketçilik ise boş zamanlarımda keyifle uğraştığım hobilerimdir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Experience Start -->
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Resume</p>
+                    <h2>İŞ DENEYİMİ</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">11/2023 - ..</div>
+                            <h2>Yazılım Geliştirme Uzmanı</h2>
+                            <h4>Warpiris, İstanbul, TR</h4>
+                            <p>
+                                Müşteri odaklı yaklaşımla ödeme sistemleri entegrasyon süreçlerinde görev aldım. Mikroservis mimarisinde geliştirmeler yaparak BKM (Kolay Adres, Siper), Yurt Dışı Para Transferi (Payporter) ve TCMB (FAST) entegrasyonlarında aktif rol üstlendim.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">09/2021 - 11/2023</div>
+                            <h2>Yazılım Geliştirme Uzmanı</h2>
+                            <h4>Turkcell Global Bilgi, İstanbul, TR</h4>
+                            <p>
+                                Turkcell ve grup şirketlerine ait müşteri temsilcilerinin performans ve prim yönetimi hesaplamalarını içeren Reflex projesinde danışman olarak görev aldım. Bu kapsamda, insan kaynakları yönetimi süreçlerini optimize edecek geliştirmeler yaparak şirket içi kurumsal yönetim ihtiyaçlarını karşıladım.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">01/2021 - 09/2021</div>
+                            <h2>Yazılım Geliştirme Uzmanı</h2>
+                            <h4>Netaş, İstanbul, TR</h4>
+                            <p>
+                                Microsoft PowerBI ve IBM Cognos'a alternatif olacak yerli, bulut tabanlı iş zekası uygulaması projesinde (Rubiq) aktif rol aldım. Flask kullanarak Apache Superset altyapısı üzerinden Backend isteklerin yönetilmesi.
+                                Kullanıcıların verilerden anlamlı iç görüler elde etmesini sağlayacak grafiklerin geliştirilmesi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Experience End -->
+        
 
-									<br>Proje Url'si = <b> <a href="https://www.kaggle.com/moneyshot495/fake-news-detected-tfidfvectorizer-nb-lr">ML algoritmaları kullanılarak Sahte Haber Tespiti   </a></b>
-								</p>
-								<p align="justify"><b>IBM Data Visualization  </b><br>
-									IBM in coursera platformunda vermiş olduğu veri görselleştirme eğitiminin final testinin cevaplarından oluşan iki farklı notebok.
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/IBM_Data-Visualization-with-Python">IBM Data Visualization </a></b>
-								</p>
-								<p align="justify"><b>Stok Satış Otomasyonu  </b><br>
-									Java ile gerçekleştirilen başlangıç düzeyde Stok Satış takip otomasyonudur. 
-									<br>Proje Url'si = <b> <a href="https://github.com/fafsin495/StokSat-_Java">Stok Satış Otomasyonu </a></b>
-								</p>
-								
-							</article>
+        <!-- Blog Start -->
+        <div class="blog" id="blog">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Projeler</p>
+                    <h2>Çalışmalarım</h2>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/clickia.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Clickia Ödeme Sistemi</h2>
+                                <p>
+                                    AppleStore, PlayStore ve Param ödeme sistemlerinin entegrasyonunu içeren, .NET tabanlı bir ödeme alt yapısı.
+                                    Onion Architecture kullanılarak geliştirilen projede, Mediator Pattern ile modüller arası iletişim sağlandı.
+                                </p>
+                                <a class="btn" href="https://github.com/fafsin495/PaymentIntegration">Github Link<i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/pricetracking.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Fiyat Takip Sistemi</h2>
+                                
+                                <p>
+                                    Gıda ürünlerinin günlük fiyat değişimlerini izlemek ve analiz etmek için tasarlanan iki aşamalı bir proje.
+                                </p>
+                                <a class="btn" href="https://github.com/fafsin495/PriceTracking">Github Link<i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-img">
+                                <img src="img/cyberbulling.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Siber Zorbalık Tespiti</h2>
+                                <p>
+                                    Twitter verileri üzerinde doğal dil işleme teknikleri kullanarak siber zorbalık tespiti için optimizasyon odaklı bir makine öğrenimi projesi.
+                                </p>
+                                <a class="btn" href="https://github.com/fafsin495/Cyberbulling-Diagnosis">Github Link <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/fakenews.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Fake News Detection Challange KDD 2020</h2>
+                                
+                                <p>Kaggle'da "Yarınlarımız İçin Güvenli İnternet" temasıyla düzenlenen Sahte Haber Tespiti Yarışması'na katılarak, Multinomial Naive-Bayes, Passive Aggressive Classifier ve Logistic Regression algoritmalarını analiz ettim.</p>
+                                <a class="btn" href="https://www.kaggle.com/code/moneyshot495/fnd-ml">Kaggle Link<i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/sentimenanlys.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Duygu Analizi</h2>
+                                
+                                <p>
+                                    Kullanıcı yorumlarını analiz ederek ürün değerlendirmelerini otomatikleştiren bir metin sınıflandırma projesi.
+                                </p>
 
-						<!-- sertifika -->
-							<article id="sertifika">
-								<h2 class="major">Sertifika</h2>
-								<span class="image main"><img src="images/data.jpg" alt="" /></span>
-								<p align="justify">Çeşitli platformlardan hedeflemiş olduğum kariyer için gerekli olan eğitimleri almaya devam ediyorum.Bu hedefime yönelik olarak tamamlamış olduğum eğitimlerin yanı sıra Udacity platformunda <b>SQL for Data Analysis</b> kursuna devam etmekteyim.
-								</p>
-								<p align="justify"><h3><b>Databases and SQL for Data Science  </b></h3>
-									<span><b>coursera<br></b></span>
-									Coursera platformu üzerinde IBM tarafından verilen temel olarak veri tabanları ve sql konularının anlatıldığı eğitimdir. 
-									<br>Sertifika Url'si = <b> <a href="https://www.coursera.org/account/accomplishments/certificate/ZH766BUVY6C2">Databases and SQL for Data Science</a></b>
-								</p>
-								<p align="justify"><h3><b>Machine Learning with Python</b></h3>
-									<span><b>coursera<br></b></span>
-									Coursera platformu üzerinde IBM tarafından verilen makine öğrenmesi ve algoritmalarının anlatıldığı eğitimdir.
-									<br>Sertifika Url'si = <b> <a href="https://www.coursera.org/account/accomplishments/certificate/9N6L6C3CTUBE">Machine Learning with Python</a></b>
-								</p>
-								<p align="justify"><h3><b>Python for Data Science and AI  </b></h3>
-									<span><b>coursera<br></b></span>
-									Coursera platformu üzerinde IBM tarafından verilern veri bilimi temelleri için python programlama eğitimdir.
-									<br>Sertifika Url'si = <b> <a href="https://www.coursera.org/account/accomplishments/verify/5B5R5YD8JQVR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Python for Data Science and AI</a></b>
-								</p>
-								<p align="justify"><h3><b>What is Data Science?  </b></h3>
-									<span><b>coursera<br></b></span>
-									Coursera platformu üzerinde IBM tarafından verilern veri bilimi temellerinin anlatıldığı eğitimdir.
-									<br>Sertifika Url'si = <b> <a href="https://www.coursera.org/account/accomplishments/verify/3T9Z4UFG9L9C">What is Data Science? </a></b>
-								</p>
-								<p align="justify"><h3><b>Data Analysis with Pyton</b><br></h3>
-									<span><b>coursera<br></b></span>
-									Coursera platformu üzerinde IBM tarafından verilern Python ile veri analizinin işlendiği eğitimdir.
-									<br>Sertifika Url'si = <b> <a href="https://www.coursera.org/account/accomplishments/verify/JYJWLCDHM28F?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Data Analysis with Pyton</a></b>
-								</p>
-								<p align="justify"><h3><b>Feature Engineering for NLP in Python</b><br></h3>
-									<span><b>DataCamp<br></b></span>
-									Datacamp platformu üzerinde doğal dil işleme yöntemleri ile öznitelik çıkarımının uygulamalı olarak anlatıldığı eğitimdir.
-									<br>Sertifika Url'si = <b> <a href="https://www.datacamp.com/statement-of-accomplishment/course/8bc0f124c87a68054fd2120911cd72946235cb9c">Feature Engineering for NLP in Python</a></b>
-								</p>
-								<p align="justify"><h3><b>Yapay Zekaya İlk Adım</b><br></h3>
-									<span><b>AI Business School<br></b></span>
-									Al Business School un vermiş olduğu yapay zeka'nın temellerinin anlatıldığı kurs.
-									<br>Sertifika Url'si = <b> <a href="https://learn.aibusinessschool.com/api/certification/382721794179118">Yapay Zekaya İlk Adım</a></b>
-								</p>
-							</p>
-							<p align="justify"><h3><b>Sıfırdan Uzmanlığa Veri Bilimi</b><br></h3>
-								<span><b>Udemy<br></b></span>
-								Udemy eğitim platformu üzerinde DATAITEAM adlı kurum tarafından verilen veri bilimi eğitim serisi (1-7).
-								<br>Sertifika Url'si = <b> <a href="https://www.udemy.com/certificate/UC-c840ebab-0e49-48d1-a25a-83b15cc6b9b6/">Sıfırdan Uzmanlığa Veri Bilimi</a></b>
-							</p>
-							<p align="justify"><b>Buraya kadar gelip beni ve çalışmalarımı daha yakından incelediğiniz için teşekkür ederim.<br>İyi Günler Dilerim</b></p>
-							</article>
+                                <a class="btn" href="https://github.com/fafsin495/Sentiment-_Analysis">Github Link<i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/fakenews.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Sahte Haber Tespiti</h2>
+                                <p>
+                                    Fake News veri seti üzerinde iki farklı yaklaşımla sahte haber tespiti yapılan bir proje.
+                                </p>
+                                <a class="btn" href="https://www.kaggle.com/code/moneyshot495/lstm-fake-news-detected">Kaggle Link<i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
 
-						
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Fatih Afşin</h2>
+                        <h3>Pendik, İstanbul , Türkiye</h3>
+                        <div class="footer-menu">
+                            <p>fafsin@outlook.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://github.com/fafsin495"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/fatih-afsin/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-				<ul class="icons">
-									
-					<li><a href="https://twitter.com/freedomtalon" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					
-					<li><a href="https://www.instagram.com/afsin_fatih1/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/fafsin495" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
